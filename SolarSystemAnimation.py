@@ -47,7 +47,7 @@ def loadData(name):
     return Data
 
 # Oribting matrix is ready for future processing
-Data = loadData("C:/Users/Byzantin/source/repos/Data1/Data1/orbits.npz")
+Data = loadData("C:/Users/JunnanLu/orbits.npz")
 
 # Store transposed oribiting matrix
 data = []
