@@ -80,10 +80,10 @@ ax.set_title("A Capricorn's Solar Orbiters")
 Sun = ax.plot([-0.951049],[1.52138],[-2.35551],'o',color='#8c1907',label='SUN',markersize=8.0)
 
 # Ploting the oribiting lines with line width at 0.8
-L = [ax.plot(dat[0,0:1400],dat[1,0:1400],dat[2,0:1400],linestyle='-',linewidth=0.8)[0] for dat in data]
+Line = [ax.plot(dat[0,0:1400],dat[1,0:1400],dat[2,0:1400],linestyle='-',linewidth=0.8)[0] for dat in data]
 
 # Ploting four solar planets with color, marker and labels
-Line = [ax.plot(dat[0,0:1],dat[1,0:1],dat[2,0:1],'o',markersize=6.0,color=ln.get_color(),label=names)[0] for dat, ln, names in zip(data,L,PLANT)]
+planets = [ax.plot(dat[0,0:1],dat[1,0:1],dat[2,0:1],'o',markersize=6.0,color=ln.get_color(),label=names)[0] for dat, ln, names in zip(data,L,PLANT)]
 
 # Place legend on the top left corner
 ax.legend(loc=2)
@@ -179,7 +179,7 @@ def update(num,data,line):
     return Line,
 if __name__=='__main__':
    # Making animation by repeatlly calling update function
-   ani = FuncAnimation(fig,update,frames=1000,fargs=(data,Line),interval=80)
+   ani = FuncAnimation(fig,update,frames=1000,fargs=(data,planets),interval=80)
    # Saving the animation film on local disk
    ani.save("solar.mp4",writer=writer)
    plt.draw()
