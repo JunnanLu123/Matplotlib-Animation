@@ -10,6 +10,7 @@ The plt.figure() creates a matplotlib.figure.Figure object. Both 3D ploting and 
 Axes are spaces to plot on. It is created by the add_subplot() function. Figures have multiple axes.
 We plot the Sun, planets oribit lines, and planets in three seperate plots. The Sun is plotted at a fixed coordinate. Then we draw the oribit lines for each of the four planets. The oribit lines are not animated. Finally, we animate the four planets oribiting alone with the oribiting lines.
 We call the FuncAnimate function to update the movement of the four planets. The coordinate data and plot information are passed into the function with parameter fargs. The update function will be taken by parameter func. We choose to save the animation film to disk. If you want to display the animation, please comment the ani.save call and uncomment plt.show().
-###Updating Animation
+### Updating Animation
 We define the logic for updating the planets movement in update function. The update function has three parameters which are num, data, and line. Parameter num is defined for number of frames to be animated as whole. The seconde parameter is for the 3D coordinate data for each of the four planets. The final parameter is the plot objects for each of the four planets.
+### Detail
 For more details of the implementation, please read the Solar Oribit ipynb file.
