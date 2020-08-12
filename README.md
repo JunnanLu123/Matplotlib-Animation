@@ -1,4 +1,4 @@
-|![Python](https://img.shields.io/pypi/pyversions/3)|[![DOI](https://zenodo.org/badge/286806261.svg)](https://zenodo.org/badge/latestdoi/286806261)|
+![Python](https://img.shields.io/pypi/pyversions/3) [![DOI](https://zenodo.org/badge/286806261.svg)](https://zenodo.org/badge/latestdoi/286806261)
 # Solar Orbit Animation With Matplotlib and Python
 Three dimensional plots and animation are useful for visualizing scientific computation solutions such as ODE and PDES. Some of the very advanced Matplotlib libraries include: (1). Support for Latex formated labels and texts. (2). High quality output supporting format such as PNG, PDF, SVG, and PGF. (3). GUI for interactively exploring figures.
 
